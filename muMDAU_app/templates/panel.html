@@ -1,0 +1,14 @@
+{% extends "base.html"%}
+{% block title %}首頁{% endblock %}
+{% block top %}{% include "topbar.html" %}{% endblock %}
+{% block content %}
+			<form id="form" class="createtable">
+				<input class="form-control" name="title" type="text" required onkeyup="value=value.replace(/[\一-\龥]|\s|\b/g,'') " placeholder="格式 不可中文 不可空白" id = "fc-inp"></br>
+				<textarea class="content" name="content" data-provide="markdown" rows="20"></textarea> 
+				<hr/>
+			</form>
+			<button type="submit" id="save" class="btn btn-success">
+				<span class="glyphicon glyphicon-warning-sign" aria-hidden="true"></span>
+				直接發表此文
+			</button>
+{% endblock %} 
