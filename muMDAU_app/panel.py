@@ -6,18 +6,6 @@ import os
 @app.route('/admin' , methods=['GET','POST'])
 def panel():
     if request.method == "POST":
-        username = request.form['useradd']
-        dpass = request.form['passdd']
-        try:
-            with sqlite3connect('../sqlite/0MuMDAU.db') as conn:
-                cursor = conn.cursor()
-                cursor.execute('select COUNT() as "Resault" from user where username = ?', [username])
-                answer = cursor.fetchone
-                if answer == 1 :
-                    return "去吃大便"
-                else:
-                    return "Create!"
-        except:
             print("dd")
     else:
         if 'username' in session:
