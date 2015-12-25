@@ -7,15 +7,71 @@
 	<img style="display:block; margin:auto;" src="/static/img/yuntechche.png" width="100%"></img>
 </div>
 <div class="col-xs-10 col-sm-10" style="height:100%;">
-	<h3>照片倫播</h3>
+	<h3>照片輪播</h3>
 	<hr>
 	<img style="display:block; margin:auto;" src="/static/img/banner.jpg" width="100%"></img>
 	<br />
 	<ul class="nav nav-tabs">
-		<li role="presentation" class="active"><a href="#">最新公告</a></li>
-	    <li role="presentation"><a href="#">去年公告</a></li>
-		<li role="presentation"><a href="#">歷年公告</a></li>
+		<li class="active"><a data-toggle="tab" href="#netest">最新公告</a></li>
+	    <li role="presentation"><a data-toggle="tab" href="#1yr">去年公告</a></li>
+		<li role="presentation"><a data-toggle="tab" href="#olded">歷年公告</a></li>
 	</ul>
+	<div class="tab-content">
+		<div id ="newest" class="tab-pane fade in active">
+		
+<div class="panel-group" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" 
+          href="#collapseOne">
+2015.11.17》11月22日(日)碩士班甄試口試公告
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse ">
+      <div class="panel-body">
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" 
+          href="#collapseTwo">
+2015.10.19》儀器教育訓練時間-UV.XRD.FL(更正)粒徑分析儀(加場及考試)
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse">
+      <div class="panel-body">
+      </div>
+    </div>
+	</div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" 
+          href="#collapseThree">
+2015.10.14》預研生第二次徵選公告
+        </a>
+      </h4>
+    </div>
+    <div id="collapseThree" class="panel-collapse collapse">
+      <div class="panel-body">
+      </div>
+    </div>
+  </div>
+</div>
+
+		</div>
+		<div id ="1yr" class="tab-pane fade">
+
+		</div>
+		<div id ="olded" class="tab-pane fade">
+
+		</div>
+	</div>
 </div>
 
 {% endblock %}
