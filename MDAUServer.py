@@ -18,5 +18,5 @@ if __name__ == "__main__":
     else:
         debugB = True
 
-    app.run(host="127.0.0.1",port=setting.port , debug=debugB)
+    app.run(host="www.che.yuntech.edu.tw",port=setting.port , debug=debugB)
 

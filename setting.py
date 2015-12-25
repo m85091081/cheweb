@@ -2,7 +2,7 @@
 port = 8509
 
 ##Debug Mode , 0 = off , 1 = on
-debug = 0
+debug = 1
 
 ## Database Setting
 sqliteFile = '../sqlite/0MuMDAU.db'

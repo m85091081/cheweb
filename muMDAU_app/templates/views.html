@@ -1,0 +1,13 @@
+{% extends "base.html"%}
+{% block title %}系所簡介{% endblock %}
+{% block top %}{% include "topbar.html" %}{% endblock %}
+{% block content %}
+<div class="col-xs-2 col-sm-2" style="height:100%;">
+
+	<img style="display:block; margin:auto;" src="/static/img/yuntechche.png" width="100%"></img>
+</div>
+<div class="col-xs-10 col-sm-10" style="height:100%;">
+	{{ content }}
+</div>
+
+{% endblock %}
