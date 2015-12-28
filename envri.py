@@ -5,6 +5,7 @@ import sys
 import os 
 import socket
 import subprocess
+from database import InitDB
 def checkenvir():
     if sys.version_info[0] == 3:
         is_pypy = '__pypy__' in sys.builtin_module_names
@@ -29,7 +30,9 @@ def checkenvir():
     else:
         print("Fuck U Python2")
         exit()
-                
+            
+def rungitpull():
+    subprocess.call(['git pull'], shell=True)
 
 def importapp():
     subprocess.call([checkenvir() + ' MDAUServer.py'], shell=True)
@@ -42,10 +45,19 @@ def portcheck(port):
     finally:
         s.close()
 
+def preDB():
+    InitDB.createTable()
+
 if __name__ == "__main__":
     while 1:
-        if portcheck(setting.port) == True:
-            if os.path.exists("_posted") == True :
-                importapp()
-            else:
-                os.makedirs("_posted")
+        if os.path.exists(setting.sqliteFile) == True:
+            if portcheck(setting.port) == True:
+                if os.path.exists("_posted") == True :
+                    importapp()
+                else:
+                    os.makedirs("_posted")
+        else:
+            print("正在建立系統環境")
+            print("伺服器更新確認中")
+            rungitpull()
+            preDB()
