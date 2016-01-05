@@ -16,52 +16,20 @@
 	</ul>
 	<div class="tab-content">
 		<div id ="newest" class="tab-pane fade in active">
-		
-<div class="panel-group" id="accordion">
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" 
-          href="#collapseOne">
-2015.11.17》11月22日(日)碩士班甄試口試公告
-        </a>
-      </h4>
-    </div>
-    <div id="collapseOne" class="panel-collapse collapse ">
-      <div class="panel-body">
-      </div>
-    </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" 
-          href="#collapseTwo">
-2015.10.19》儀器教育訓練時間-UV.XRD.FL(更正)粒徑分析儀(加場及考試)
-        </a>
-      </h4>
-    </div>
-    <div id="collapseTwo" class="panel-collapse collapse">
-      <div class="panel-body">
-      </div>
-    </div>
-	</div>
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" 
-          href="#collapseThree">
-2015.10.14》預研生第二次徵選公告
-        </a>
-      </h4>
-    </div>
-    <div id="collapseThree" class="panel-collapse collapse">
-      <div class="panel-body">
-      </div>
-    </div>
-  </div>
-</div>
-
+			<div class="panel-group" id="accordion">
+			{% for x in pastdata %}
+			  	<div class="panel panel-default">
+					<div class="panel-heading">
+				  		<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#collapse{{ loop.index }}">{{ x }}</a>
+				  		</h4>
+					</div>
+					<div id="collapse{{ loop.index }}" class="panel-collapse collapse ">
+				  		<div class="panel-body"></div>
+					</div>
+				</div>
+			{% endfor %}
+			</div>
 		</div>
 		<div id ="1yr" class="tab-pane fade">
 
