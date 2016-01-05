@@ -21,12 +21,33 @@ def index():
             filel.sort(reverse=True)
             for f in filel:
                 if os.path.isfile(os.path.join(directory,f)):
-                    i = i+1
-                    print(f)
-                    with open("./markdown/"+str(pastime)+"/"+str(f),'r') as fil:
-                        content = fil.readline()
-                        content = content.replace("title:","")
-                    data.insert(i,content)
+                    fstr = str(f).split("-",2)
+                    nowm = time.strftime('%m')
+                    if int(nowm) - 6 >=  0:
+                        if int(fstr[0]) == int(nowtime):
+                            if int(fstr[1]) - 6  >= 0:
+                                i = i+1
+                                with open("./markdown/"+str(pastime)+"/"+str(f),'r') as fil:
+                                    content = fil.readline()
+                                    content = content.replace("title:","")
+                                data.insert(i,content)
+                    else:
+                        if int(fstr[0]) == int(nowtime):
+                            if int(fstr[1]) - 6  >= 0:
+                                i = i+1
+                                with open("./markdown/"+str(pastime)+"/"+str(f),'r') as fil:
+                                    content = fil.readline()
+                                    content = content.replace("title:","")
+                                data.insert(i,content)
+                        elif int(fstr[0]) == int(nowtime)- 1:
+                            nowm = time.strftime('%m')
+                            if int(fstr[1]) - 6 - int(nowm) > 0 :
+                                i = i+1
+                                with open("./markdown/"+str(pastime)+"/"+str(f),'r') as fil:
+                                    content = fil.readline()
+                                    content = content.replace("title:","")
+                                    data.insert(i,content)
+                            
             pastdata = data
     else:
         os.makedirs(pastpath)
