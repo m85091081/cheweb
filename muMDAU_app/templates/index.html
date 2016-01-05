@@ -25,7 +25,9 @@
 				  		</h4>
 					</div>
 					<div id="collapse{{ loop.index }}" class="panel-collapse collapse ">
-				  		<div class="panel-body"></div>
+						<div class="panel-body">
+							{{contentdata[loop.index]}}
+						</div>
 					</div>
 				</div>
 			{% endfor %}

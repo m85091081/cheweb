@@ -12,6 +12,7 @@ def index():
     if os.path.exists(postpath) == True:
         directory = os.path.expanduser(postpath)
         data = []
+        content1 = []
         i=0
         if os.listdir(directory)==None:
             pastdata = " "
@@ -30,6 +31,7 @@ def index():
                                     content = fil.readline()
                                     content = content.replace("title:","")
                                 data.insert(i,content)
+                                content1.insert(i,fil.read())
                     else:
                         if int(fstr[0]) == int(nowtime):
                             if int(fstr[1]) - 6  >= 0:
@@ -38,6 +40,8 @@ def index():
                                     content = fil.readline()
                                     content = content.replace("title:","")
                                 data.insert(i,content)
+                                content1.insert(i,fil.read())
+                                
                         elif int(fstr[0]) == int(nowtime)- 1:
                             nowm = time.strftime('%m')
                             if int(fstr[1]) - 6 - int(nowm) > 0 :
@@ -46,8 +50,10 @@ def index():
                                     content = fil.readline()
                                     content = content.replace("title:","")
                                     data.insert(i,content)
+                                    content1.insert(i,fil.read())
                             
             pastdata = data
+            contentdata = content1
     else:
         os.makedirs(postpath)
 
