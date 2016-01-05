@@ -8,10 +8,9 @@ main = Blueprint('main',__name__)
 def index():
     nowtime = time.strftime('%Y')
     pastime = int(nowtime) - 1
-    pastpath = "./markdown/"+str(pastime)
-    print(pastpath)
-    if os.path.exists(pastpath) == True:
-        directory = os.path.expanduser(pastpath)
+    postpath = "./posts"
+    if os.path.exists(postpath) == True:
+        directory = os.path.expanduser(postpath)
         data = []
         i=0
         if os.listdir(directory)==None:
@@ -27,7 +26,7 @@ def index():
                         if int(fstr[0]) == int(nowtime):
                             if int(fstr[1]) - 6  >= 0:
                                 i = i+1
-                                with open("./markdown/"+str(pastime)+"/"+str(f),'r') as fil:
+                                with open("./posts/"+str(f),'r') as fil:
                                     content = fil.readline()
                                     content = content.replace("title:","")
                                 data.insert(i,content)
@@ -35,7 +34,7 @@ def index():
                         if int(fstr[0]) == int(nowtime):
                             if int(fstr[1]) - 6  >= 0:
                                 i = i+1
-                                with open("./markdown/"+str(pastime)+"/"+str(f),'r') as fil:
+                                with open("./posts/"+str(f),'r') as fil:
                                     content = fil.readline()
                                     content = content.replace("title:","")
                                 data.insert(i,content)
@@ -43,14 +42,14 @@ def index():
                             nowm = time.strftime('%m')
                             if int(fstr[1]) - 6 - int(nowm) > 0 :
                                 i = i+1
-                                with open("./markdown/"+str(pastime)+"/"+str(f),'r') as fil:
+                                with open("./posts/"+str(f),'r') as fil:
                                     content = fil.readline()
                                     content = content.replace("title:","")
                                     data.insert(i,content)
                             
             pastdata = data
     else:
-        os.makedirs(pastpath)
+        os.makedirs(postpath)
 
     return render_template('index.html',**locals())
 
