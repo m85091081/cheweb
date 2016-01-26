@@ -1,0 +1,248 @@
+﻿{% extends "base.html"%}
+{% block title %}教師陣容{% endblock %}
+{% block top %}{% include "topbar.html" %}{% endblock %}
+{% block content %}
+<style type="text/css">
+<!--
+a:link {
+	color: #000000;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #000000;
+}
+a:hover {
+	text-decoration: none;
+	color: #000000;
+}
+a:active {
+	text-decoration: none;
+	color: #000000;
+}
+.style1 {
+	color: #3366CC;
+	font-weight: bold;
+}
+.style2 {
+	color: #FFF
+}
+.style3 {color: #3366CC}
+#___01 tr td .inword tr td table {
+	font-family: "新細明體";
+	color: #666;
+	background-color: #FFF;
+}
+-->
+</style>
+<table width="980" height="100%" border="0" align="center" cellpadding="0" cellspacing="0" class="inword" id="___01">
+<tr>
+		<td width="28">
+	<td width="924" align="center" valign="top" bgcolor="#FFFFFF"><table width="715" border="0" align="center" cellpadding="0" cellspacing="3" class="menu">
+		  <tr>
+		    <td height="20" colspan="2" align="center" valign="middle" bgcolor="FFFFFF" onClick="this.style.background ='FFFFFF'" onMouseOver="this.style.background ='FFFFFF'" onMouseout="this.style.background ='FFFFFF'">&nbsp;</td>
+	    </tr>
+		  <tr>
+		    <td height="20" colspan="2" align="center" valign="middle" bgcolor="FFFFFF" onClick="this.style.background ='FFFFFF'" onMouseOver="this.style.background ='FFFFFF'" onMouseout="this.style.background ='FFFFFF'"><strong>點擊可以連結至該實驗室</strong></td>
+	    </tr>
+		  <tr>
+		    <td width="354" height="15" align="center" valign="middle" bgcolor="#D1D1D1" onClick="this.style.background ='#FFCC00'" onMouseOver="this.style.background ='#FFCC00'" onMouseout="this.style.background ='#D1D1D1'"><div align="center"><a href="http://www.che.yuntech.edu.tw/Laboratory/functional%20polymer%20lab/index.html" target="_blank">功能性高分子實驗室</a></div>      
+		      <div align="center"></div></td>
+		    <td width="352" align="center" valign="middle" bgcolor="#D1D1D1" onClick="this.style.background ='#FFCC00'" onMouseOver="this.style.background ='#FFCC00'" onMouseout="this.style.background ='#D1D1D1'"><div align="center"><a href="http://www.che.yuntech.edu.tw/Nanolab/index.htm" target="_blank">奈米材料實驗室</a>
+		      </div></td>
+	    </tr>
+		  <tr>
+		    <td width="354" height="15" align="center" valign="middle" bgcolor="#D1D1D1" onClick="this.style.background ='#FFCC00'" onMouseOver="this.style.background ='#FFCC00'" onMouseout="this.style.background ='#D1D1D1'"><div align="center"><a href="http://www.che.yuntech.edu.tw/Fermentation%20Biosensing%20Lab/FB%20lab.htm" target="_blank">發酵暨生物感測實驗室</a></div>        
+		      <div align="center"></div></td>
+		    <td width="352" align="center" valign="middle" bgcolor="#D1D1D1" onClick="this.style.background ='#FFCC00'" onMouseOver="this.style.background ='#FFCC00'" onMouseout="this.style.background ='#D1D1D1'"><div align="center">分離暨感測技術實驗室
+		      </div></td>
+	    </tr>
+		  <tr>
+		    <td width="354" align="center" valign="middle" bgcolor="#D1D1D1" onClick="this.style.background ='#FFCC00'" onMouseOver="this.style.background ='#FFCC00'" onMouseout="this.style.background ='#D1D1D1'"><div align="center">碳材開發暨吸附工程實驗室</div>
+		      <div align="center"></div></td>
+		    <td width="352" align="center" valign="middle" bgcolor="#D1D1D1" onClick="this.style.background ='#FFCC00'" onMouseOver="this.style.background ='#FFCC00'" onMouseout="this.style.background ='#D1D1D1'"><div align="center"><a href="http://www.che.yuntech.edu.tw/Advanced%20Material%20Lab/index.htm" target="_blank">先進材料實驗室</a>
+		      </div></td>
+	    </tr>
+		  <tr>
+		    <td align="center" valign="middle" bgcolor="#D1D1D1" onClick="this.style.background ='#FFCC00'" onMouseOver="this.style.background ='#FFCC00'" onMouseout="this.style.background ='#D1D1D1'"><div align="center">奈米複合材料實驗室
+		      </div></td>
+		    <td align="center" valign="middle" bgcolor="#D1D1D1" onClick="this.style.background ='#FFCC00'" onMouseOver="this.style.background ='#FFCC00'" onMouseout="this.style.background ='#D1D1D1'"><div align="center"><a href="http://www.che.yuntech.edu.tw/Electrochemistry%20La/index.htm.htm" target="_blank">電化學實驗室</a>
+		      </div></td>
+	    </tr>
+		<tr>
+		    <td width="354" align="center" valign="middle" bgcolor="#D1D1D1" onClick="this.style.background ='#FFCC00'" onMouseOver="this.style.background ='#FFCC00'" onMouseout="this.style.background ='#D1D1D1'"><div align="center"><a href="http://www.che.yuntech.edu.tw/Polymeric%20Material%20L陳文星/" target="_blank">製程資源再生實驗室</a>
+		      </div></td>
+		    <td height="20" align="center" valign="middle" bgcolor="#D1D1D1" onClick="this.style.background ='#FFCC00'" onMouseOver="this.style.background ='#FFCC00'" onMouseout="this.style.background ='#D1D1D1'">
+            	<div align="center"><a href="http://www.che.yuntech.edu.tw/Synthetic%20Chemistry%20La/" target="_blank">生物與電子材料化學實驗室</a>
+            	</div>
+            </td>
+	    </tr>
+        <tr>
+		    <td height="20" align="center" valign="middle" bgcolor="#D1D1D1" onClick="this.style.background ='#FFCC00'" onMouseOver="this.style.background ='#FFCC00'" onMouseout="this.style.background ='#D1D1D1'">
+            	<div align="center"><a href="http://www.che.yuntech.edu.tw/processlab/index.html" target="_blank">電化/生醫材料實驗室</a></div>
+            </td>
+		    <td height="20" align="center" valign="middle" bgcolor="#D1D1D1" onClick="this.style.background ='#FFCC00'" onMouseOver="this.style.background ='#FFCC00'" onMouseout="this.style.background ='#D1D1D1'">
+            	<div align="center">高分子與生醫材料實驗室</div>
+            </td>
+	    </tr>
+        <tr>
+		    <td height="20" align="center" valign="middle" bgcolor="#D1D1D1" onClick="this.style.background ='#FFCC00'" onMouseOver="this.style.background ='#FFCC00'" onMouseout="this.style.background ='#D1D1D1'">
+            	<div align="center"><a href="http://www.interface.yuntech.edu.tw/index.html" target="_blank">光學膜與介面材料實驗室</a></div>
+            </td>
+		    <td height="20" align="center" valign="middle" bgcolor="#D1D1D1" onClick="this.style.background ='#FFCC00'" onMouseOver="this.style.background ='#FFCC00'" onMouseout="this.style.background ='#D1D1D1'">
+            	<div align="center"><a href="http://www.che.yuntech.edu.tw/Laboratory/EC418/index.htm" target="_blank">界面暨生物科技實驗室</a></div>
+            </td>
+	    </tr>
+        <tr>
+		    <td height="20" align="center" valign="middle" bgcolor="#D1D1D1" onClick="this.style.background ='#FFCC00'" onMouseOver="this.style.background ='#FFCC00'" onMouseout="this.style.background ='#D1D1D1'">
+            	<div align="center">綠色能源材料實驗室</div>
+            </td>
+		    <td height="20" align="center" valign="middle" bgcolor="#D1D1D1" onClick="this.style.background ='#FFCC00'" onMouseOver="this.style.background ='#FFCC00'" onMouseout="this.style.background ='#D1D1D1'">
+            	<div align="center">生物產品開發實驗室</div>
+            </td>
+	    </tr>
+        <tr>
+		    <td height="20" align="center" valign="middle" bgcolor="#D1D1D1" onClick="this.style.background ='#FFCC00'" onMouseOver="this.style.background ='#FFCC00'" onMouseout="this.style.background ='#D1D1D1'">
+            	<div align="center">微奈米流體裝置實驗室</div>
+            </td>
+		    <td height="20" align="center" valign="middle" bgcolor="#D1D1D1" onClick="this.style.background ='#FFCC00'" onMouseOver="this.style.background ='#FFCC00'" onMouseout="this.style.background ='#D1D1D1'">
+            	<div align="center">共用儀器室</div>
+            </td>
+	    </tr>
+        <!-- <tr>
+		    <td height="20" align="center" valign="middle" bgcolor="#D1D1D1" onClick="this.style.background ='#FFCC00'" onMouseOver="this.style.background ='#FFCC00'" onMouseout="this.style.background ='#D1D1D1'">
+            	<div align="center">&nbsp;</div>
+            </td>
+		    <td height="20" align="center" valign="middle" bgcolor="#D1D1D1" onClick="this.style.background ='#FFCC00'" onMouseOver="this.style.background ='#FFCC00'" onMouseout="this.style.background ='#D1D1D1'">
+            	<div align="center">&nbsp;</div>
+            </td>
+	    </tr> -->
+		  </table>
+		  <table width="836" border="0" cellpadding="0" cellspacing="0" class="inword">
+		    <tr>
+		      <td width="836" valign="top"><p></p>
+		        <p><span class="style2"><span class="style1"><strong>化學工程與材料工程系儀器設備使用與管理</strong></span></span><br>
+		          本系可使用儀器、設備清冊已整理完成，為配合學校資源共享、落實與產業界之合作，訂定<strong>「<a href="download/化材系儀器使用服務.doc">國立雲林科技大學化學工程與材料工程系儀器使用服務收費要點</a></strong>」提供儀器使用服務。</p>
+		        <p>          服務項目：動態機械分析儀、火焰式原子吸收光譜儀&nbsp;、微差示掃描熱分析儀、傅立葉轉換紅外線光譜儀、加熱變形/衛氏軟化溫度試驗機、高效能液相層析儀、熱重分析儀、紫外光-可見光光譜儀、恆電位電流儀、磷光光譜儀。</p>
+		        <p><br>
+		          ※申請單請至<a href="main_f.html" class="inwordlink"><strong>常用表格</strong></a>下載<br>
+	            </p>
+		        <p>.........................................................................................................................................................................................................................................<br>
+		          <strong><span class="style3">（一）專業實驗室</span></strong>
+		          (黑色粗體字可以點擊連結至該實驗室)          </p>
+		        <table width="690" border="1" align="center" class="form_all">
+		          <tr bgcolor="#999999" class="style1">
+		            <th width="210" class="style2" scope="col">實驗室名稱</th>
+		            <th width="458" align="center" class="style2" scope="col">重點設備</th>
+	              </tr>
+		          <tr>
+		            <td class="style1"><a href="http://www.che.yuntech.edu.tw/Laboratory/functional%20polymer%20lab/index.html" target="_blank">功能性高分子實驗室</a></td>
+		            <td class="form">燃料電池測試機台、恒電位儀、氣相色層分析儀、偏光顯微鏡及加溫載物台</td>
+	              </tr>
+		          <tr>
+		            <td class="style1"><a href="http://www.che.yuntech.edu.tw/Nanolab/index.htm" target="_blank">奈米材料實驗室</a></td>
+		            <td class="form">太陽能電池測試儀、氣體感測器測試儀、觸媒反應器。</td>
+	              </tr>
+		          <tr>
+		            <td class="style1"><a href="http://www.che.yuntech.edu.tw/Fermentation%20Biosensing%20Lab/FB%20lab.htm" target="_blank">發酵暨生物感測實驗室</a></td>
+		            <td class="form">UV/Vis光譜儀、電化學分析儀、恆溫振盪器、真空乾燥箱、光學顯微鏡</td>
+	              </tr>
+		          <tr>
+		            <td class="style1">分離暨感測技術實驗室</td>
+		            <td class="form">高效能液相色層分析儀、氣相層析儀、固-液萃取裝置、減壓濃縮機、薄膜擴散槽、紅外線水分測定器</td>
+	              </tr>
+		          <tr>
+		            <td class="style1">碳材開發暨吸附工程實驗室</td>
+		            <td class="form">氣相色層分析儀、熱分析儀、UV/Vis光譜儀、高速均質機、電化學分析儀</td>
+	              </tr>
+		          <tr>
+		            <td class="style1"><a href="http://www.che.yuntech.edu.tw/Advanced%20Material%20Lab/index.htm" target="_blank">先進材料實驗室</a></td>
+		            <td class="form">熱傳導係數探針、氣相色層分析儀、氧氣測定器</td>
+	              </tr>
+                  <tr>
+		            <td class="style1">奈米複合材料實驗室</td>
+		            <td class="form">奈米纖維抽絲設備、高溫爐、旋轉塗佈機</td>
+	              </tr>
+		          <tr>
+		            <td class="style1"><a href="http://www.che.yuntech.edu.tw/Electrochemistry%20La/index.htm.htm" target="_blank">電化學實驗室</a></td>
+		            <td class="form">合金電源供應器電子示波儀、旋轉電極測試系統、無機氧化反應器</td>
+	              </tr>
+		          <tr>
+		            <td class="style1"><a href="http://www.che.yuntech.edu.tw/Polymeric%20Material%20L陳文星/" target="_blank">製程資源再生實驗室</a></td>
+		            <td class="form">紅外線光譜儀、高溫爐燒結系統、質量流量控制系統、高壓定量幫浦</td>
+	              </tr>
+		          <tr>
+		            <td class="style1"><a href="http://www.che.yuntech.edu.tw/Synthetic%20Chemistry%20La/" target="_blank">生物與電子材料化學實驗室</a></td>
+		            <td class="form">真空手套箱、真空減壓濃縮機、光二極體陳列檢知器。</td>
+	              </tr>
+                   <tr>
+		            <td class="style1"><a href="http://www.che.yuntech.edu.tw/processlab/index.html" target="_blank">電化/生醫材料實驗室</a></td>
+		            <td class="form">恆電位儀、高溫爐燒結系統、電漿反應設備</td>
+	              </tr>
+		          <tr>
+		            <td class="style1">高分子與生醫材料實驗室</td>
+		            <td class="form">減壓濃縮機、冷凍乾燥機、無菌操作台、細胞培養箱、高速離心機、恆溫恆濕箱</td>
+	              </tr>
+		          <tr>
+		            <td class="style1"><a href="http://www.interface.yuntech.edu.tw/index.html" target="_blank">光學膜與介面材料實驗室</a></td>
+		            <td class="form">表面張力測試儀、恆電位儀、太陽光模擬器、旋轉塗佈機、浸沾式塗佈機、輸送帶式紫外光硬化系統</td>
+	              </tr>
+                  <tr>
+		            <td class="style1"><a href="http://www.che.yuntech.edu.tw/Laboratory/EC418/index.htm" target="_blank">界面暨生物科技實驗室</a></td>
+		            <td class="form">粒徑暨界面電位分析儀、長工作距離螢光顯微鏡、KSV單分子層設備，HPLC、自動取樣機、UV及FL偵測器，高效能DSC、CUP-HORN 超音波震盪器</td>
+	              </tr>
+                  <tr>
+		            <td class="style1">綠色能源材料實驗室</td>
+		            <td class="form">恆電位儀、減壓濃縮儀、真空烘箱、超音波震盪器、紫外光/可見光光譜儀</td>
+	              </tr>
+                  <tr>
+		            <td class="style1">生物產品開發實驗室</td>
+		            <td class="form">高效液相層析儀、低溫高速離心機、恆溫振盪培養箱、酵素免疫分析儀、高溫灰化爐、簡易醱酵槽、鏈聚合酶反應器、蛋白質及核酸電泳系統、蛋白表現與純化設備、生物光學顯微鏡、旋轉濃縮儀</td>
+	              </tr>
+                  <tr>
+		            <td class="style1">微奈米流體裝置實驗室</td>
+		            <td class="form">無塵室、旋轉塗佈機、深UV顯影曝光裝置、表面電漿處理設施、倒立螢光顯微鏡以及影像處理裝置、高精密微電流儀、奈米顆粒記數儀、高壓放大器、高頻放大器、訊號產生器、全自動針筒注射器、高速叢集電腦計算系統</td>
+	              </tr>
+		          <tr>
+		            <td class="style1">共用儀器室</td>
+		            <td class="form">傅立葉轉換紅外光譜儀、紫外光/可見光光譜儀、螢光光譜儀、火焰式原子吸收光譜儀、熱重分析儀、示差掃瞄熱分析儀、恒電位電流儀、高效液相層析儀、氣相層析儀、Zeta電位/奈米粒徑分析儀、金相顯微鏡、流變儀、比表面積與孔隙度分析儀、ABBE折射計</td>
+	              </tr>
+		          <!-- <tr>
+		            <td class="style1"></td>
+		            <td class="form"></td>
+	              </tr> -->
+	            </table>
+		        <p>&nbsp; </p>
+		        <p>.........................................................................................................................................................................................................................................</p>
+  <p><strong><span class="style2"><img src="images/icon_04.gif" alt="" width="25" height="25" align="absmiddle"></span> <span class="style3">（二）教學實驗室</span></strong></p>
+  <p><img src="images/icon_02.gif" width="15" height="7"> <span class="style3">普通化學實驗室<br>
+    </span><br>重點設備： <br>
+    微量化學天平、pH計、熔點測定器、電導度計、分光光度計、恆溫水槽、超音波洗淨器、烘箱、真空過濾器、加熱攪拌器、離心機、水流抽氣機
+  <p>.........................................................................................................................................................................................................................................</p>
+		        
+		        <img src="images/icon_02.gif" alt="" width="15" height="7"> <span class="style3">單元操作實驗室</span><br>
+  <br>重點設備： <br>
+		        熱傳導率測定器、填充塔、熱交換器、攪拌熱傳、薄膜蒸發器、蒸餾塔、氣-液及液-液擴散係數、雷諾數測定、閥特性係數測定、泵性能曲線<br>
+  <p>.........................................................................................................................................................................................................................................</p>
+		        <p><img src="images/icon_02.gif" alt="" width="15" height="7"> <span class="style3">物理化學實驗室</span></p>
+		        <p>重點設備： <br>
+		          動黏度測量器、量熱器、恆溫水槽、往復式振盪恆溫水槽、磁石加熱攪拌器、pH計、電導度計、精密電子天平、烘箱、精密溫度計、大氣壓力計
+	            <p>.........................................................................................................................................................................................................................................</p>
+		        <p><img src="images/icon_02.gif" alt="" width="15" height="7"> <span class="style3">材料分析/儀器分析實驗室</span></p>
+		        <p>重點設備： <br>
+		          萬能試驗機、黏度計、耐磨耗試驗機、耐衝擊試驗機、高溫灰化爐、硬度計、烘箱、熱變形溫度檢測儀、混鍊機、熱壓機、滾筒式試驗機、六聯式電磁加熱攪拌器、電子天平</p>
+  <p>.........................................................................................................................................................................................................................................</p>
+		        <p><img src="images/icon_02.gif" alt="" width="15" height="7"> <span class="style3">階梯教室/演講廳</span></p>
+		        <p>重點設備： <br>
+		          可供大型研討會、專業人士演講使用，也是全系師生聚會的最佳場所
+  <p>.........................................................................................................................................................................................................................................</p>
+  				<p><img src="images/icon_02.gif" alt="" width="15" height="7"> <span class="style3">電腦教室</span></p>
+		        <p>重點設備： <br>
+		          採用伺服器連動系統，可提供老師以電腦為主軸進行教學及學生線上學習，讓師生互動充滿新鮮及樂趣
+  <p>.........................................................................................................................................................................................................................................</p></td>
+	        </tr>
+    </table>  </td>
+<td width="28">
+  </tr>
+</table>
+{% endblock %}
