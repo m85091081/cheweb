@@ -70,3 +70,6 @@ def about():
 @app.route('/teach')
 def teach():
     return render_template('table.html')
+@app.route('/teach/<url>')
+def teachurl(url):
+    return render_template(url)
