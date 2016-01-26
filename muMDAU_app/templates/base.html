@@ -8,19 +8,16 @@
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
 	<title>{% block title %}{% endblock %} - 國立雲林科技大學化學工程與材料工程系/所/博士班</title>
 </head>
-<body style="height:100%; background-image:url(/static/img/bg.jpg); background-position:center top; background-size: 100%;  background-repeat: no-repeat;">
+<body style="height:100%; background-color:#EEFFBB;">
 	<div id="container" style="height:100%;">
 		<div class="row" style="width:100%; height:100%;">
-			{% block top %}{% endblock %}
 			<div class="col-xs-1 col-sm-1" style="height:100%;"></div>  
 			<div class="col-xs-10 col-sm-10">
-<div style="padding-top:180px; height:100%;">
+<div style="padding-top:20px; height:100%;">
+				<img src="/static/img/top.jpg" style="opacity: 0.9; width:100%;">
 	<div class="panel panel-default" style= "border-radius:0 !important; border:1; height:100%; background: none;">
 		<div class="panel-body" style="height:100%; background:rgba(255,255,255,0.9)!important;">
-			<ol class="breadcrumb" >
-				<li>現在位置</li>
-			</ol>
-			</hr>
+			{% block top %}{% endblock %}
 			{% block content %}{% endblock %}
 		</div>
 	</div>

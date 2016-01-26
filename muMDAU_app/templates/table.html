@@ -1,125 +1,161 @@
 {% extends "base.html"%}
-{% block title %}系所簡介{% endblock %}
+{% block title %}教師陣容{% endblock %}
 {% block top %}{% include "topbar.html" %}{% endblock %}
 {% block content %}
-<div class="col-xs-2 col-sm-2" style="height:100%;">
-
-	<img style="display:block; margin:auto;" src="/static/img/yuntechche.png" width="100%"></img>
-</div>
-<div class="col-xs-10 col-sm-10" style="height:100%;">
 <style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-.tg .tg-yw4l{vertical-align:top}
+<!--
+a:link {
+	color: #000000;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #000000;
+}
+a:hover {
+	text-decoration: none;
+	color: #000000;
+}
+a:active {
+	text-decoration: none;
+}
+.style1 {
+	font-size: 12px;
+	color: #C45031;
+	font-weight: bold;
+}
+.style2 {color: #FFFFFF}
+.style3 {color: #000000; }
+#___01 tr td .style tr td .inword tr td {
+	color: #000;
+}
+#___01 tr td .style tr td .inword tr td {
+	color: #000;
+}
+-->
 </style>
-<table class="tg">
-  <tr>
-    <th class="tg-yw4l">教授名稱        <br></th>
-    <th class="tg-yw4l">職稱<br><br></th>
-    <th class="tg-yw4l">專長與研究領域</th>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">林智汶</td>
-    <td class="tg-yw4l">教授兼系主任</td>
-    <td class="tg-yw4l">黏著科學與技術、橡膠技術、複合(混成)材料、高分子材料在儲能裝置之應用</td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">楊肇政</td>
-    <td class="tg-yw4l">教授</td>
-    <td class="tg-yw4l">電化學、熔融鹽化學、材料化學、污染防治</td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">黃振家</td>
-    <td class="tg-yw4l">教授兼副校長</td>
-    <td class="tg-yw4l">分離技術、吸附工程、環境工程、化工製程安全設計</td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">陳文章</td>
-    <td class="tg-yw4l">教授</td>
-    <td class="tg-yw4l">生化工程、生物感測器設計、生物分離技術、微生物發酵工程</td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">賴世明</td>
-    <td class="tg-yw4l">教授</td>
-    <td class="tg-yw4l">天然物萃取與純化、製備級層析分離技術、生化分離技術</td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">王怡仁</td>
-    <td class="tg-yw4l">教授</td>
-    <td class="tg-yw4l">薄膜分離材料、高分子摻和材料、奈米複合材料、導電高分子材料</td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">廖文城</td>
-    <td class="tg-yw4l">教授</td>
-    <td class="tg-yw4l">高分子化學、界面化學、化學工業安全、有機合成工業</td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">林春強</td>
-    <td class="tg-yw4l">教授</td>
-    <td class="tg-yw4l">電極材料改質、生醫/生化材料、腐蝕與災害防治</td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">王健聰</td>
-    <td class="tg-yw4l">教授</td>
-    <td class="tg-yw4l">奈米材料、太陽能電池、能源觸媒、半導體感測器</td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">陳文星</td>
-    <td class="tg-yw4l">教授</td>
-    <td class="tg-yw4l">石化製程、觸媒化學、污染防制</td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">劉博滔</td>
-    <td class="tg-yw4l">教授</td>
-    <td class="tg-yw4l">光學膜、奈米材料、高分子合成、環境觸媒、膠體與界面現象</td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">粘譽薰</td>
-    <td class="tg-yw4l">副教授</td>
-    <td class="tg-yw4l">奈米纖維、生醫材料、奈米複合材料</td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">周宗翰</td>
-    <td class="tg-yw4l">副教授</td>
-    <td class="tg-yw4l">界面科學、藥物釋放載體、生物界面、生醫工程</td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">陳國裕</td>
-    <td class="tg-yw4l">副教授</td>
-    <td class="tg-yw4l">生醫材料、高分子合成、奈米材料</td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">吳知易</td>
-    <td class="tg-yw4l">助理教授</td>
-    <td class="tg-yw4l">有機和無機材料、光電高分子材料、太陽能電池</td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">鄭宇伸</td>
-    <td class="tg-yw4l">助理教授</td>
-    <td class="tg-yw4l">生化工程、綠色化學工程、生質能源、應用微生物技術、微藻生物科技、生物程序設計、工程經濟與生命週期分析等</td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">葉禮賢</td>
-    <td class="tg-yw4l">助理教授</td>
-    <td class="tg-yw4l">奈米流體裝置、生物微流體分離技術、界面工程、能源轉換</td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">莊寶霖</td>
-    <td class="tg-yw4l">技士</td>
-    <td class="tg-yw4l">儀器設備管理維修、維護，材料，業務之零用金管理,分機:4602 聯絡信箱:chuangpl@yuntech.edu.tw</td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">周秋楓</td>
-    <td class="tg-yw4l">助教</td>
-    <td class="tg-yw4l">教務行政，招生業務、課程事務等相關系上行政工作,分機:4601 聯絡信箱:choucf@yuntech.edu.tw</td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">孫嘴英</td>
-    <td class="tg-yw4l">工友</td>
-    <td class="tg-yw4l">公文書信傳遞及其他交辦事項，系館環境及安全維護,分機:4603 聯絡信箱:sunty@yuntech.edu.tw</td>
-  </tr>
-</table>
-</div>
+</head>
+        <table width="100%" border="0" cellpadding="3" cellspacing="3" class="inword">
+          <tr>
+            <td width="100" height="20" bordercolor="#FFFFFF" bgcolor="#CC3300"><div align="center" class="style2">姓名</div></td>
+            <td width="120" bordercolor="#FFFFFF" bgcolor="#CC3300"><div align="center" class="style2">職稱</div></td>
+            <td width="456" bordercolor="#FFFFFF" bgcolor="#CC3300"><p align="center" class="style2">專長與研究領域</p>              </td>
+          </tr>
+        </table>
+        <table width="100%" border="0" cellpadding="3" cellspacing="3" class="inword">
+          <tr>
+            <td height="10" align="center" valign="middle" bgcolor="#CCCCCC" onClick="this.style.background ='#FFCC00'" onMouseOver="this.style.background ='#FFCC00'" onMouseout="this.style.background ='#CCCCCC'"><a href="main_c_05.html" target="_main">林智汶</a>
+            <td bgcolor="#E6E6CA"><div align="center">教授兼系主任</div></td>
+            <td bgcolor="#D3D3A9"><div align="left" class="style3">黏著科學與技術、橡膠技術、複合(混成)材料、高分子材料在儲能裝置之應用<br>
+            </div></td>
+          </tr>
+          <tr>
+            <td width="100" height="10" align="center" valign="middle" bgcolor="#CCCCCC" onClick="this.style.background ='#FFCC00'" onMouseOver="this.style.background ='#FFCC00'" onMouseout="this.style.background ='#CCCCCC'"><a href="main_c_03.html" target="_main">楊肇政</a>
+              <td width="120" bgcolor="#E6E6CA"><div align="center">教授</div></td>
+            <td width="456" bgcolor="#D3D3A9"><div align="left" class="style3">電化學、熔融鹽化學、材料化學、污染防治</div></td>
+          </tr>
+          <tr>
+            <td width="100" height="10" align="center" valign="middle" bgcolor="#CCCCCC" onClick="this.style.background ='#FFCC00'" onMouseOver="this.style.background ='#FFCC00'" onMouseout="this.style.background ='#CCCCCC'"><a href="main_c_04.html" target="_main">黃振家</a>
+            <td width="120" bgcolor="#E6E6CA"><div align="center">教授兼副校長</div></td>
+            <td width="456" bgcolor="#D3D3A9"><div align="left" class="style3">分離技術、吸附工程、環境工程、化工製程安全設計</div></td>
+          </tr>
+          <tr>
+            <td width="100" height="10" align="center" valign="middle" bgcolor="#CCCCCC" onClick="this.style.background ='#FFCC00'" onMouseOver="this.style.background ='#FFCC00'" onMouseout="this.style.background ='#CCCCCC'"><a href="main_c_06.html" target="_main">陳文章</a>
+              <td width="120" bgcolor="#E6E6CA"><div align="center">教授</div></td>
+            <td width="456" bgcolor="#D3D3A9"><div align="left" class="style3">生化工程、生物感測器設計、生物分離技術、微生物發酵工程</div></td>
+          </tr>
+          <tr>
+            <td width="100" height="10" align="center" valign="middle" bgcolor="#CCCCCC" onClick="this.style.background ='#FFCC00'" onMouseOver="this.style.background ='#FFCC00'" onMouseout="this.style.background ='#CCCCCC'"><a href="main_c_07.html" target="_main"></a>
+              <a href="main_c_07.html" target="_main">賴世明</a><td width="120" bgcolor="#E6E6CA"><div align="center">教授</div></td>
+            <td width="456" bgcolor="#D3D3A9"><div align="left" class="style3">天然物萃取與純化、製備級層析分離技術、生化分離技術</div></td>
+          </tr>
+          <tr>
+            <td width="100" height="10" align="center" valign="middle" bgcolor="#CCCCCC" onClick="this.style.background ='#FFCC00'" onMouseOver="this.style.background ='#FFCC00'" onMouseout="this.style.background ='#CCCCCC'"><a href="main_c_08.html" target="_main">王怡仁</a>
+            <td width="120" bgcolor="#E6E6CA"><div align="center">教授</div></td>
+            <td width="456" bgcolor="#D3D3A9"><div align="left" class="style3">薄膜分離材料、高分子摻和材料、奈米複合材料、導電高分子材料</div></td>
+          </tr>
+          <tr>
+            <td width="100" height="10" align="center" valign="middle" bgcolor="#CCCCCC" onClick="this.style.background ='#FFCC00'" onMouseOver="this.style.background ='#FFCC00'" onMouseout="this.style.background ='#CCCCCC'"><a href="main_c_09.html" target="_main">廖文城</a>
+            <td width="120" bgcolor="#E6E6CA"><div align="center">教授</div></td>
+            <td width="456" bgcolor="#D3D3A9"><div align="left" class="style3">高分子化學、界面化學、化學工業安全、有機合成工業</div></td>
+          </tr>
+          <tr>
+            <td width="100" height="10" align="center" valign="middle" bgcolor="#CCCCCC" onClick="this.style.background ='#FFCC00'" onMouseOver="this.style.background ='#FFCC00'" onMouseout="this.style.background ='#CCCCCC'"><a href="main_c_10.html" target="_main">林春強</a>
+            <td width="120" bgcolor="#E6E6CA"><div align="center">教授</div></td>
+            <td width="456" bgcolor="#D3D3A9"><div align="left" class="style3">電極材料改質、生醫/生化材料、腐蝕與災害防治</div></td>
+          </tr>
+          <tr>
+            <td width="100" height="10" align="center" valign="middle" bgcolor="#CCCCCC" onClick="this.style.background ='#FFCC00'" onMouseOver="this.style.background ='#FFCC00'" onMouseout="this.style.background ='#CCCCCC'"><a href="main_c_11.html" target="_main">王健聰</a>
+            <td width="120" bgcolor="#E6E6CA"><div align="center">教授</div></td>
+            <td width="456" bgcolor="#D3D3A9"><div align="left" class="style3">奈米材料、太陽能電池、能源觸媒、半導體感測器</div></td>
+          </tr>
+          <tr>
+            <td width="100" height="10" align="center" valign="middle" bgcolor="#CCCCCC" onClick="this.style.background ='#FFCC00'" onMouseOver="this.style.background ='#FFCC00'" onMouseout="this.style.background ='#CCCCCC'"><a href="main_c_12.html" target="_main">陳文星</a>
+            <td width="120" bgcolor="#E6E6CA"><div align="center">教授</div></td>
+            <td width="456" bgcolor="#D3D3A9"><div align="left" class="style3">石化製程、觸媒化學、污染防制</div></td>
+          </tr>
+          <tr>
+            <td width="100" height="10" align="center" valign="middle" bgcolor="#CCCCCC" onClick="this.style.background ='#FFCC00'" onMouseOver="this.style.background ='#FFCC00'" onMouseout="this.style.background ='#CCCCCC'"><a href="http://www.interface.yuntech.edu.tw" target="_main">劉博滔</a>
+            <td width="120" bgcolor="#E6E6CA"><div align="center">教授</div></td>
+            <td width="456" bgcolor="#D3D3A9"><div align="left" class="style3">光學膜、奈米材料、高分子合成、環境觸媒、膠體與界面現象 </div></td>
+          </tr>
+          <tr>
+            <td width="100" height="10" align="center" valign="middle" bgcolor="#CCCCCC" onClick="this.style.background ='#FFCC00'" onMouseOver="this.style.background ='#FFCC00'" onMouseout="this.style.background ='#CCCCCC'"><a href="main_c_14.html" target="_main">粘譽薰</a>
+              <td width="120" bgcolor="#E6E6CA"><div align="center">副教授</div></td>
+            <td width="456" bgcolor="#D3D3A9"><div align="left" class="style3"> 奈米纖維、生醫材料、奈米複合材料 </div></td>
+          </tr>
+          <tr>
+            <td height="10" align="center" valign="middle" bgcolor="#CCCCCC" onClick="this.style.background ='#FFCC00'" onMouseOver="this.style.background ='#FFCC00'" onMouseout="this.style.background ='#CCCCCC'"><a href="main_c_17.html">周宗翰</a>
+            <td bgcolor="#E6E6CA"><div align="center">副教授</div></td>
+            <td bgcolor="#D3D3A9"><div align="left" class="style3">
+              <p>界面科學、藥物釋放載體、生物界面、生醫工程<strong><SPAN lang="EN-US"></SPAN></strong></p>
+            </div></td>
+          </tr>
 
+          <tr>
+            <td width="100" height="10" align="center" valign="middle" bgcolor="#CCCCCC" onClick="this.style.background ='#FFCC00'" onMouseOver="this.style.background ='#FFCC00'" onMouseout="this.style.background ='#CCCCCC'"><a href="main_c_16.html" target="_main">陳國裕</a>
+            </a>
+            <td width="120" bgcolor="#E6E6CA"><div align="center">副教授</div></td>
+            <td bgcolor="#D3D3A9"><div align="left" class="style3">生醫材料、高分子合成、奈米材料</div></td>
+          </tr>
+          <tr>
+            <td height="10" align="center" valign="middle" bgcolor="#CCCCCC"><a href="main_c_18.html">吳知易</a></td>
+            <td bgcolor="#E6E6CA"><div align="center">助理教授</div></td>
+            <td bgcolor="#D3D3A9"><div align="left" class="style3">有機和無機材料、光電高分子材料、太陽能電池 </div></td>
+          </tr>
+          <tr>
+            <td height="10" align="center" valign="middle" bgcolor="#CCCCCC"><a href="main_c_19.html">鄭宇伸</a></td>
+            <td bgcolor="#E6E6CA"><div align="center">助理教授</div></td>
+            <td bgcolor="#D3D3A9" class="style3">生化工程、綠色化學工程、生質能源、應用微生物技術、微藻生物科技、生物程序設計、工程經濟與生命週期分析等</td>
+          </tr>
+          <tr>
+            <td height="10" align="center" valign="middle" bgcolor="#CCCCCC"><a href="main_c_20.html">葉禮賢</a></td>
+            <td bgcolor="#E6E6CA"><div align="center">助理教授</div></td>
+            <td bgcolor="#D3D3A9"><span class="style3">奈米流體裝置、生物微流體分離技術、界面工程、能源轉換</span></td>
+          </tr>
+          <tr>
+            <td width="100" height="10" align="center" valign="middle" bgcolor="#CCCCCC"><span class="style3">莊寶霖</span>              </div></td>
+            <td width="120" bgcolor="#E6E6CA"><div align="center">技士</div></td>
+            <td width="456" bgcolor="#D3D3A9"><div align="left"><span class="style3">儀器設備管理維修、維護，材料，業務之零用金管理<br>
+              分機:4602 聯絡信箱:chuangpl@yuntech.edu.tw</span>
+              </div></td>
+          </tr>
+          <tr>
+            <td height="10" align="center" valign="middle" bgcolor="#CCCCCC"><span class="style3">周秋楓
+              </div>
+            </span></td>
+            <td bgcolor="#E6E6CA"><div align="center">助教</div></td>
+            <td bgcolor="#D3D3A9"><div align="left" class="style3"> 教務行政，招生業務、課程事務等相關系上行政工作<br>
+              分機:4601 聯絡信箱:choucf@yuntech.edu.tw</div></td>
+          </tr>
+          <tr>
+            <td height="10" align="center" valign="middle" bgcolor="#CCCCCC" class="style3">孫嘴英</td>
+            <td align="center" valign="middle" bgcolor="#E6E6CA"><div align="center">工友</div></td>
+            <td bgcolor="#D3D3A9" class="style3">公文書信傳遞及其他交辦事項，系館環境及安全維護<br>
+              分機:4603 聯絡信箱:sunty@yuntech.edu.tw</td>
+          </tr>
+          <tr>
+            <td height="10" colspan="3" align="right" valign="top">&nbsp;</td>
+          </tr>
+        </table>        
 {% endblock %}
