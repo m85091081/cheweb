@@ -16,12 +16,12 @@
 			  	<div class="panel panel-default">
 					<div class="panel-heading">
 				  		<h4 class="panel-title">
-							<a data-toggle="collapse" data-parent="#accordion" href="#collapse{{ loop.index - 1 }}">{{ x }}</a>
+							<a data-toggle="collapse" data-parent="#accordion" href="#collapse{{ loop.index }}">{{ x }}</a>
 				  		</h4>
 					</div>
 					<div id="collapse{{ loop.index }}" class="panel-collapse collapse ">
 						<div class="panel-body">
-							{{contentdata[loop.index]}}
+							{{contentdata[loop.index - 1 ]}}
 						</div>
 					</div>
 				</div>
