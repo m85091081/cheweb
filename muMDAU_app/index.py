@@ -25,7 +25,7 @@ def index():
                     nowm = time.strftime('%m')
                     if int(nowm) - 6 >=  0:
                         if int(fstr[0]) == int(nowtime):
-                            if int(fstr[1]) - 6  >= 0:
+                            if int(fstr[1]) - 6  <= 0:
                                 i = i+1
                                 with open("./posts/"+str(f),'r') as fil:
                                     content = fil.readline()
