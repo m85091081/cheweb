@@ -34,7 +34,7 @@ def index():
                                 content1.insert(i,fil.read())
                     else:
                         if int(fstr[0]) == int(nowtime):
-                            if int(fstr[1]) - 6  >= 0:
+                            if 6 - int(fstr[1]) >= 0:
                                 i = i+1
                                 with open("./posts/"+str(f),'r') as fil:
                                     content = fil.readline()
