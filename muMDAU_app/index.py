@@ -30,8 +30,8 @@ def index():
                                 with open("./posts/"+str(f),'r') as fil:
                                     content = fil.readline()
                                     content = content.replace("title:","")
-                                data.insert(i,content)
-                                content1.insert(i,fil.read())
+                                    data.insert(i,content)
+                                    content1.insert(i,fil.read())
                     else:
                         if int(fstr[0]) == int(nowtime):
                             if 6 - int(fstr[1]) >= 0:
@@ -39,8 +39,8 @@ def index():
                                 with open("./posts/"+str(f),'r') as fil:
                                     content = fil.readline()
                                     content = content.replace("title:","")
-                                data.insert(i,content)
-                                content1.insert(i,fil.read())
+                                    data.insert(i,content)
+                                    content1.insert(i,fil.read())
                                 
                         elif int(fstr[0]) == int(nowtime)- 1:
                             nowm = time.strftime('%m')
