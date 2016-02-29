@@ -57,14 +57,14 @@ def goals():
                     fstr = str(f).split("-",2)
                     if int(fstr[0]) == int(nowtime):
                         i = i+1
-                        with open("./posts/"+str(f),'r') as fil:
+                        with open("./goals/"+str(f),'r') as fil:
                             content = fil.readline()
                             content = content.replace("title:","")
                             data.insert(i,content)
                             content1.insert(i,fil.read())
                     else:
                         a = a+1
-                        with open("./posts/"+str(f),'r') as filipt:
+                        with open("./goals/"+str(f),'r') as filipt:
                             contentt = filipt.readline()
                             contentt = contentt.replace("title:","")
                             dataa.insert(i,contentt)
