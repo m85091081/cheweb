@@ -1,0 +1,31 @@
+{% extends "base.html"%}
+{% block title %}徵才資訊{% endblock %}
+{% block top %}{% include "topbar.html" %}{% endblock %}
+{% block content %}
+	<img style="display:block; margin:auto; border-radius: 5px;" src="/static/img/banner.jpg" width="100%" ></img>
+	<br />
+	<ul class="nav nav-tabs">
+		<li class="active"><a data-toggle="tab" href="#newest">徵才資訊</a></li>
+	</ul>
+	<div class="tab-content">
+		<div id ="newest" class="tab-pane fade in active">
+			<div class="panel-group" id="accordion">
+			{% for x in pastdata %}
+			  	<div class="panel panel-default">
+					<div class="panel-heading">
+				  		<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#collapse{{ loop.index }}">{{ x }}</a>
+				  		</h4>
+					</div>
+					<div id="collapse{{ loop.index }}" class="panel-collapse collapse ">
+						<div class="panel-body">
+							{{contentdata[loop.index - 1 ]}}
+						</div>
+					</div>
+				</div>
+			{% endfor %}
+			</div>
+		</div>
+	</div>
+
+{% endblock %}
