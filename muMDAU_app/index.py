@@ -76,3 +76,6 @@ def lab():
 @app.route('/teach/<url>')
 def teachurl(url):
     return render_template(url)
+@app.route('/download')
+def download():
+    return render_template('download.html')
