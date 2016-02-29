@@ -29,14 +29,14 @@
 		</div>
 		<div id ="olded" class="tab-pane fade">
 			<div class="panel-group" id="accordion">
-			{% for x in olddata %}
+			{% for y in olddata %}
 			  	<div class="panel panel-default">
 					<div class="panel-heading">
 				  		<h4 class="panel-title">
-							<a data-toggle="collapse" data-parent="#accordion" href="#collapse{{ loop.index }}">{{ x }}</a>
+							<a data-toggle="collapse" data-parent="#accordion" href="#old{{ loop.index }}">{{ x }}</a>
 				  		</h4>
 					</div>
-					<div id="collapse{{ loop.index }}" class="panel-collapse collapse ">
+					<div id="old{{ loop.index }}" class="panel-collapse collapse ">
 						<div class="panel-body">
 							{{oldcontent[loop.index - 1 ]}}
 						</div>
