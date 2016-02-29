@@ -14,6 +14,7 @@ def work():
         data = []
         content1 = []
         i=0
+        a=0
         if os.listdir(directory)==None:
             pastdata = " "
         else:
