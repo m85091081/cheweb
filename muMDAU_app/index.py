@@ -37,6 +37,7 @@ def work():
 
 @main.route('/goals')
 def goals():
+    nowtime = time.strftime('%Y')
     postpath = "./goals"
     if os.path.exists(postpath) == True:
         directory = os.path.expanduser(postpath)
