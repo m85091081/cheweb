@@ -1,0 +1,50 @@
+{% extends "base.html"%}
+{% block title %}師生榮耀{% endblock %}
+{% block top %}{% include "topbar.html" %}{% endblock %}
+{% block content %}
+	<img style="display:block; margin:auto; border-radius: 5px;" src="/static/img/banner.jpg" width="100%" ></img>
+	<br />
+	<ul class="nav nav-tabs">
+		<li class="active"><a data-toggle="tab" href="#newest">本年榮耀</a></li>
+		<li role="presentation"><a data-toggle="tab" href="#olded">歷年榮耀</a></li>
+	</ul>
+	<div class="tab-content">
+		<div id ="newest" class="tab-pane fade in active">
+			<div class="panel-group" id="accordion">
+			{% for x in pastdata %}
+			  	<div class="panel panel-default">
+					<div class="panel-heading">
+				  		<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#collapse{{ loop.index }}">{{ x }}</a>
+				  		</h4>
+					</div>
+					<div id="collapse{{ loop.index }}" class="panel-collapse collapse ">
+						<div class="panel-body">
+							{{contentdata[loop.index - 1 ]}}
+						</div>
+					</div>
+				</div>
+			{% endfor %}
+			</div>
+		</div>
+		<div id ="olded" class="tab-pane fade">
+			<div class="panel-group" id="accordion">
+			{% for y in olddata %}
+			  	<div class="panel panel-default">
+					<div class="panel-heading">
+				  		<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#old{{ loop.index }}">{{ y }}</a>
+				  		</h4>
+					</div>
+					<div id="old{{ loop.index }}" class="panel-collapse collapse ">
+						<div class="panel-body">
+							{{oldcontent[loop.index - 1 ]}}
+						</div>
+					</div>
+				</div>
+			{% endfor %}
+
+		</div>
+	</div>
+
+{% endblock %}

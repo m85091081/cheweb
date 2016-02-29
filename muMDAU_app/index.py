@@ -35,6 +35,49 @@ def work():
 
     return render_template('work.html',**locals())
 
+@main.route('/goals')
+def goals():
+    postpath = "./goals"
+    if os.path.exists(postpath) == True:
+        directory = os.path.expanduser(postpath)
+        data = []
+        content1 = []
+        i=0
+        dataa = []
+        contentt1 = []
+        a=0
+        if os.listdir(directory)==None:
+            pastdata = " "
+        else:
+            filel = os.listdir(directory)
+            filel.sort(reverse=True)
+            for f in filel:
+                if os.path.isfile(os.path.join(directory,f)):
+                    fstr = str(f).split("-",2)
+                    if int(fstr[0]) == int(nowtime):
+                        i = i+1
+                        with open("./posts/"+str(f),'r') as fil:
+                            content = fil.readline()
+                            content = content.replace("title:","")
+                            data.insert(i,content)
+                            content1.insert(i,fil.read())
+                    else:
+                        a = a+1
+                        with open("./posts/"+str(f),'r') as filipt:
+                            contentt = filipt.readline()
+                            contentt = contentt.replace("title:","")
+                            dataa.insert(i,contentt)
+                            contentt1.insert(i,filipt.read())
+                            
+            pastdata = data
+            contentdata = content1
+            olddata = dataa
+            oldcontent = contentt1
+    else:
+        os.makedirs(postpath)
+
+    return render_template('goals.html',**locals())
+
 @main.route('/')
 def index():
     nowtime = time.strftime('%Y')
